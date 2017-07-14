@@ -3,6 +3,11 @@
 *.hg
 *.deb
 debian/*
+<<<<<<< HEAD
+=======
+*.rpm
+redhat/*
+>>>>>>> 72b2e8ce95b54f8402cc9003dd64d0f6327e8ee0
 *.pyc
 .mercury_history
 .profile

@@ -15,7 +15,9 @@ addons:
     - protobuf-compiler
     - libprotobuf-java
     - python-protobuf
+    - rpm
     - python-twisted
+
 matrix:
   include:
     - os: linux
@@ -35,6 +37,7 @@ install:
   - python setup.py build
   - python setup.py sdist bdist_wheel
   - make deb
+  - make rpm
   - VERSION=`git describe --tags  | cut -c 1-5`
   - sudo dpkg -i dist/drozer_$VERSION.deb
  
